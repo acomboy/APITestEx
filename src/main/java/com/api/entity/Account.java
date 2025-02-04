@@ -17,8 +17,8 @@ public class Account {
     private String customerName;
     private String customerMobile;
 
-    @Email(message = "Email is required field")
-    @NotBlank
+    @NotBlank(message = "Email is required field")
+    @Email(message = "Invalid email format")
     private String customerEmail;
 
     private String address1;
